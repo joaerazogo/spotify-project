@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  BASE_URL_AUTH: 'https://accounts.spotify.com/',
+  BASE_URL_INFO: 'https://api.spotify.com/',
+  FEATURE_PLAYLIST: 'v1/browse/featured-playlists?timestamp=2022-05-31T19%3A40%3A31&offset=0&limit=30',
+  LOCAL_STORAGE_SESSION: 'session',
+  TOKEN_TYPE: 'token'
 };
 
 /*

@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+<section>
+    <ul class="list">
+        <li class="list__item col-md-3 col-8 text-center" *ngFor="let item of featurePlayList?.playlists?.items">
+            <app-card [song]="item"></app-card>
+        </li>
+    </ul>
+</section>
+<a [routerLink]="['/home']">
+    <button type="button" class="btn btn-success">Return</button>
+</a>
+<a [routerLink]="['/music/favorite-music']">
+    <button type="button" class="btn btn-success">Show favorites</button>
+</a>

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: black; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.list__item {
+    list-style-type: none;
+}
+
+.section__button__color{
+    color: black;
+    border-radius: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.section__button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+}

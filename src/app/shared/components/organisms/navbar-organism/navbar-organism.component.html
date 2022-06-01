@@ -1,0 +1,13 @@
+<nav class="navbar">
+    <figure class="logo__figure">
+        <img class="logo__img" src="../../../../../assets/img/spotify_logotipo.jpg" alt="spotify_logotipo.jpg">
+    </figure>
+    <section class="section__options p-5" *ngIf="showOptions">
+        <a [routerLink]="['/music/favorite-music']">
+            <button type="button" class="btn btn-success section__button__color">Show favorite music</button>
+        </a>
+        <a [routerLink]="['/auth/login']">
+            <button type="button" class="btn btn-success section__button__color">logout</button>
+        </a>
+    </section>
+</nav>

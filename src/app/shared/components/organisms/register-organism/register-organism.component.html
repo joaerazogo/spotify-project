@@ -1,0 +1,14 @@
+<h1 class="title mb-3">Please register user</h1>
+<ul class="list">
+    <li class="list__item" *ngFor="let item of fieldInformationRegister">
+        <app-field-item [fieldItem]="item"></app-field-item>
+    </li>
+</ul>
+<section class="section__button m-4">
+    <a [routerLink]="['/home']">
+        <button type="button" class="btn btn-success section__button__color">Register</button>
+    </a>
+    <a [routerLink]="['/auth/login']">
+        <button type="button" class="btn btn-success section__button__color">Back Sign in</button>
+    </a>
+</section>

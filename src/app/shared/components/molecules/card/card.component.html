@@ -1,0 +1,11 @@
+<section class="card">
+  <figure>
+    <img class="card-img-top" [src]="song?.images[0]?.url" alt="Card image cap">
+  </figure>
+  <article class="card-body">
+    <h5 class="card-title">{{ song?.name }}</h5>
+    <p class="card-text">{{ song?.description }}.</p>
+    <button (click)="addToPlayList(song)" type="button" class="btn btn-success w-100 mb-2 section__button__color">Add to playlist</button>
+    <!-- <button class="btn btn-light w-100 section__button__color" type="button">Remove from playlist </button> -->
+  </article>
+</section>

@@ -1,0 +1,14 @@
+<h1 class="title mb-4">Sign in User</h1>
+<ul class="list">
+    <li class="list__item" *ngFor="let item of fieldInformationLogin">
+        <app-field-item [fieldItem]="item"></app-field-item>
+    </li>
+</ul>
+<section class="section__button m-4">
+    <a [routerLink]="['/home']">
+        <button type="button" class="btn btn-success section__button__color">Sign in</button>
+    </a>
+    <a [routerLink]="['/auth/register']">
+        <button type="button" class="btn btn-success section__button__color">Sign up</button>
+    </a>
+</section>
